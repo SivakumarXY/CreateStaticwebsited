@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  align-items: center;
+}
+
+.searchbar {
+  border: black solid 1px;
+  padding: 8px;
+  width: 250px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-name {
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.getHome {
+  display: flex;
+  gap: 5px;
+}
+
+.getHome:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.Imagedi {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.Imagedi img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.getTittle h2 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.getPara {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 80%;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.fa-solid.fa-bars {
+  display: none;
+  font-size: 23px;
+}
+
+.Footerpage {
+  background-color: black;
+  padding: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 601px) {
+  .getHome {
+    display: block;
+  }
+
+  .fa-solid.fa-bars {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .getHome {
+    display: none;
+  }
+
+  .fa-solid.fa-bars {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    position: sticky;
+    top: 0;
+  }
+}
